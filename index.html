@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Météo Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button id="openFavMenu" class="menu-trigger">⭐ Mes Favoris</button>
+
+    <div id="sideMenu" class="side-menu">
+        <div class="menu-header">
+            <h2>Mes Favoris</h2>
+            <button id="closeFavMenu" class="close-btn">✕</button>
+        </div>
+        <div id="favoriteCities" class="favorites-list">
+            </div>
+    </div>
+
+    <div class="dashboard">
+        <section class="search-side">
+            <h1>Météo <br><span>Explorer</span></h1>
+            <div class="search-box">
+                <input type="text" id="cityInput" placeholder="Entrez une ville...">
+                <button id="searchBtn">Rechercher</button>
+            </div>
+            <div class="suggestions-container">
+                <h3>Suggestions</h3>
+                <div id="randomCities" class="random-grid"></div>
+            </div>
+        </section>
+
+        <section class="result-side">
+            <div id="weatherResult" class="weather-display"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
